@@ -1,7 +1,7 @@
 {
-  "connLink": "http://192.168.0.50:8089",
+  "connLink": "http://10.1.1.2:8084",
   "socketSession": "",
-  "mode": "demo",
+  "mode": "Live",
   "console": false,
   "dataFolder": "data",
   "pages": [

@@ -1,0 +1,17 @@
+[
+  {
+    "category": "News & Kalender",
+    "devices": [
+      {
+        "name": "Tagesschau / News",
+        "type": "iframe",
+        "html": "0_userdata.0.vis.Tagesschau.DashboardHTML"
+      },
+      {
+        "name": "Kalender / Geburtstage",
+        "type": "iframe",
+        "html": "0_userdata.0.Tools.Events.Birthdays.listHTML"
+      }
+    ]
+  }
+]

@@ -4,14 +4,55 @@
   "icon": "fa-star",
   "content": [
     {
-      "category": "Beleuchtung",
+      "category": "IT & Netzwerk",
       "devices": [
         {
-          "name": "Wohnzimmer Chill-Beleuchtung",
-          "type": "button",
-          "value": "0_userdata.0.Wohnzimmer.Wohnzimmer_Medienlicht"
+          "name": "UniFi Netzwerk",
+          "type": "iframe",
+          "html": "0_userdata.0.Netzwerk.Unifi.DashboardHTML"
+        },
+        {
+          "name": "Proxmox Cluster",
+          "type": "iframe",
+          "html": "0_userdata.0.Server.Proxmox.DashboardHTML"
+        },
+        {
+          "name": "Synology NAS",
+          "type": "iframe",
+          "html": "0_userdata.0.Geraete.Synology.DashboardHTML"
+        }
+      ]
+    },
+    {
+      "category": "Energie & Auto",
+      "devices": [
+        {
+          "name": "PV & Hausverbrauch",
+          "type": "iframe",
+          "html": "0_userdata.0.Energie.PV.DashboardHTML"
+        },
+        {
+          "name": "Ioniq 5 N",
+          "type": "iframe",
+          "html": "0_userdata.0.Fahrzeuge.Ioniq5.DashboardHTML"
+        }
+      ]
+    },
+    {
+      "category": "News & Kalender",
+      "devices": [
+        {
+          "name": "Tagesschau / News",
+          "type": "iframe",
+          "html": "0_userdata.0.News.Tagesschau.DashboardHTML"
+        },
+        {
+          "name": "Kalender (iCal / Geburtstage)",
+          "type": "iframe",
+          "html": "0_userdata.0.Dashboards.Kalender.DashboardHTML"
         }
       ]
     }
   ]
 }
+

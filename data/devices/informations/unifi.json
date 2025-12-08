@@ -1,0 +1,12 @@
+[
+  {
+    "category": "UniFi Netzwerk",
+    "devices": [
+      {
+        "name": "UniFi Dashboard",
+        "type": "iframe",
+        "html": "0_userdata.0.Netzwerk.Unifi-Api.Dashboard.HTML"
+      }
+    ]
+  }
+]

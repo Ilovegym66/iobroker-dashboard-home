@@ -1,0 +1,12 @@
+[
+  {
+    "category": "Synology NAS",
+    "devices": [
+      {
+        "name": "Synology Dashboard",
+        "type": "iframe",
+        "html": "0_userdata.0.vis.Dashboards.Synology"
+      }
+    ]
+  }
+]

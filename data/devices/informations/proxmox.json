@@ -1,0 +1,12 @@
+[
+  {
+    "category": "Proxmox / Cluster",
+    "devices": [
+      {
+        "name": "Proxmox Dashboard",
+          "type": "iframe",
+          "html": "0_userdata.0.vis.Dashboards.ProxmoxHTML"
+      }
+    ]
+  }
+]

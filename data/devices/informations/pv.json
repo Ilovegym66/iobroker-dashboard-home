@@ -1,0 +1,12 @@
+[
+  {
+    "category": "PV & Energie",
+    "devices": [
+      {
+        "name": "PV Dashboard",
+        "type": "iframe",
+        "html": "0_userdata.0.vis.Dashboards.EnergieflowHTML"
+      }
+    ]
+  }
+]
