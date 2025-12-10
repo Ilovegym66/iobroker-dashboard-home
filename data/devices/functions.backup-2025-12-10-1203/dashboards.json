@@ -1,0 +1,272 @@
+[
+  {
+    "category": "Allgemein",
+    "devices": [
+      {
+        "name": "Alarm",
+        "type": "link",
+        "value": "Alarm"
+      },
+      {
+        "name": "Anwesend",
+        "type": "link",
+        "value": "Anwesend"
+      },
+      {
+        "name": "Backups",
+        "type": "link",
+        "value": "Backups"
+      },
+      {
+        "name": "Coffee",
+        "type": "link",
+        "value": "Coffee"
+      },
+      {
+        "name": "Docker",
+        "type": "link",
+        "value": "Docker"
+      },
+      {
+        "name": "Energycharts",
+        "type": "link",
+        "value": "Energycharts"
+      },
+      {
+        "name": "F1",
+        "type": "link",
+        "value": "F1"
+      },
+      {
+        "name": "Feuchte",
+        "type": "link",
+        "value": "Feuchte"
+      },
+      {
+        "name": "Fritzbox",
+        "type": "link",
+        "value": "Fritzbox"
+      },
+      {
+        "name": "FritzDect",
+        "type": "link",
+        "value": "FritzDect"
+      },
+      {
+        "name": "Fullybrowser",
+        "type": "link",
+        "value": "Fullybrowser"
+      },
+      {
+        "name": "Geburtstage",
+        "type": "link",
+        "value": "Geburtstage"
+      },
+      {
+        "name": "Heizung",
+        "type": "link",
+        "value": "Heizung"
+      },
+      {
+        "name": "Ioniq 5 N",
+        "type": "link",
+        "value": "Ioniq 5 N"
+      },
+      {
+        "name": "Lebensmittel",
+        "type": "link",
+        "value": "Lebensmittel"
+      },
+      {
+        "name": "Logwatcher",
+        "type": "link",
+        "value": "Logwatcher"
+      },
+      {
+        "name": "Luftentfeuchter",
+        "type": "link",
+        "value": "Luftentfeuchter"
+      },
+      {
+        "name": "Luftreiniger",
+        "type": "link",
+        "value": "Luftreiniger"
+      },
+      {
+        "name": "Nachrichten",
+        "type": "link",
+        "value": "Nachrichten"
+      },
+      {
+        "name": "Netzwerk",
+        "type": "link",
+        "value": "Netzwerk"
+      },
+      {
+        "name": "Overview",
+        "type": "link",
+        "value": "Overview"
+      },
+      {
+        "name": "PaperlessNGX",
+        "type": "link",
+        "value": "PaperlessNGX"
+      },
+      {
+        "name": "Photos",
+        "type": "link",
+        "value": "Photos"
+      },
+      {
+        "name": "Pollenflug",
+        "type": "link",
+        "value": "Pollenflug"
+      },
+      {
+        "name": "Printer",
+        "type": "link",
+        "value": "Printer"
+      },
+      {
+        "name": "Proxmox",
+        "type": "link",
+        "value": "Proxmox"
+      },
+      {
+        "name": "Pumpen",
+        "type": "link",
+        "value": "Pumpen"
+      },
+      {
+        "name": "PV DG",
+        "type": "link",
+        "value": "PV DG"
+      },
+      {
+        "name": "PV EG",
+        "type": "link",
+        "value": "PV EG"
+      },
+      {
+        "name": "Rack",
+        "type": "link",
+        "value": "Rack"
+      },
+      {
+        "name": "Raumklima",
+        "type": "link",
+        "value": "Raumklima"
+      },
+      {
+        "name": "Server",
+        "type": "link",
+        "value": "Server"
+      },
+      {
+        "name": "Sonoff",
+        "type": "link",
+        "value": "Sonoff"
+      },
+      {
+        "name": "Status",
+        "type": "link",
+        "value": "Status"
+      },
+      {
+        "name": "Strom-Bueros",
+        "type": "link",
+        "value": "Strom-Bueros"
+      },
+      {
+        "name": "StromDGOG",
+        "type": "link",
+        "value": "StromDGOG"
+      },
+      {
+        "name": "StromEG",
+        "type": "link",
+        "value": "StromEG"
+      },
+      {
+        "name": "Stromzaehler",
+        "type": "link",
+        "value": "Stromzaehler"
+      },
+      {
+        "name": "Surveillance",
+        "type": "link",
+        "value": "Surveillance"
+      },
+      {
+        "name": "SV 98",
+        "type": "link",
+        "value": "SV 98"
+      },
+      {
+        "name": "Synology",
+        "type": "link",
+        "value": "Synology"
+      },
+      {
+        "name": "SynoShop",
+        "type": "link",
+        "value": "SynoShop"
+      },
+      {
+        "name": "Syr Lex Plus",
+        "type": "link",
+        "value": "Syr Lex Plus"
+      },
+      {
+        "name": "Temperaturen",
+        "type": "link",
+        "value": "Temperaturen"
+      },
+      {
+        "name": "Trakt",
+        "type": "link",
+        "value": "Trakt"
+      },
+      {
+        "name": "Trash",
+        "type": "link",
+        "value": "Trash"
+      },
+      {
+        "name": "UPS",
+        "type": "link",
+        "value": "UPS"
+      },
+      {
+        "name": "Vacuums",
+        "type": "link",
+        "value": "Vacuums"
+      },
+      {
+        "name": "Waage",
+        "type": "link",
+        "value": "Waage"
+      },
+      {
+        "name": "Wasser",
+        "type": "link",
+        "value": "Wasser"
+      },
+      {
+        "name": "Wetter",
+        "type": "link",
+        "value": "Wetter"
+      },
+      {
+        "name": "ZigbeeBatt",
+        "type": "link",
+        "value": "ZigbeeBatt"
+      },
+      {
+        "name": "Go-E",
+        "type": "link",
+        "value": "Go-E"
+      }
+    ]
+  }
+]

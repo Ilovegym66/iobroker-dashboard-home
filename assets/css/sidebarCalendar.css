@@ -20,7 +20,7 @@
   align-items: center;
   padding: 5px;
   margin-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(15, 23, 42, 0.85);
   transition: background-color 0.5s, opacity 0.5s;
 }
 
@@ -31,8 +31,14 @@
 
 /* Aktuelle Ereignisse */
 .calendar-event.event-now {
-  background-color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 197, 94, 0.25),
+    rgba(34, 197, 94, 0.5)
+  );
+  border-color: rgba(34, 197, 94, 0.9);
 }
+
 
 .event-icon {
   width: 20px;
@@ -129,14 +135,48 @@
 
   .event-title {
     font-size: 0.9em;
+      color: var(--dark-font);
+
   }
 
   .event-time,
   .event-location {
     font-size: 0.8em;
+      color: var(--light-font);
+
   }
 
   .calendar-date-header {
     font-size: 1.0em;
   }
+}
+/* === Müll-Infos unter dem Kalender === */
+
+.trash-container {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.trash-html {
+  font-size: 0.85em;
+  color: var(--light-font);
+}
+
+/* Button "Tonne draußen" */
+.trash-button {
+  margin-top: 6px;
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--main-color), var(--main-color-hover));
+  color: #0b1120;
+  font-size: 0.85em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.trash-button:hover {
+  filter: brightness(1.05);
 }

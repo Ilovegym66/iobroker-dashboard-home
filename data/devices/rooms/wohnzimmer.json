@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Szenen",
+    "devices": [
+      {
+        "name": "Gute Nacht",
+        "type": "button",
+        "value": "0_userdata.0.Schalter.GuteNacht"
+      }
+    ]
+  },
+  {
+    "category": "Medien",
+    "devices": [
+      {
+        "name": "TV Wohnzimmer",
+        "type": "plug",
+        "value": "0_userdata.0.Schalter.TV-WohnzimmerDG"
+      },
+      {
+        "name": "TV LG",
+        "type": "plug",
+        "value": "0_userdata.0.Schalter.TV-WohnzimmerEG"
+      }
+    ]
+  }
+]

@@ -3,12 +3,10 @@
   "type": "informations",
   "icon": "fa-info-circle",
   "authorization": [
-    "papa",
-    "mama",
-    "kind1",
-    "kind2",
-    "kind3",
-    "wohnzimmertab"
+    "admin",
+    "bernd",
+    "isa",
+    "gast"
   ],
   "content": [
     {

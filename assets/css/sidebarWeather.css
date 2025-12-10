@@ -22,33 +22,35 @@
 .weather-temp {
   font-size: 2em;
   font-weight: bold;
+    color: var(--light-font);
+
 }
 
 /* Wetterbeschreibung */
 .weather-desc {
   font-size: 1.2em;
-  color: var(--disabled-background);
+  color: var(--light-font);
   margin-top: 5px;
 }
 
 /* Höchst- und Tiefsttemperaturen */
 .weather-high-low {
   font-size: 1em;
-  color: var(--disabled-background);
+  color: var(--light-font);
   margin-top: 5px;
 }
 
 /* Windgeschwindigkeit */
 .weather-wind {
   font-size: 1em;
-  color: var(--disabled-background-dark);
+  color: var(--light-font);
   margin-top: 5px;
 }
 
 /* Luftfeuchtigkeit */
 .weather-humidity {
   font-size: 1em;
-  color: var(--disabled-background-dark);
+  color: var(--light-font);
   margin-top: 5px;
 }
 

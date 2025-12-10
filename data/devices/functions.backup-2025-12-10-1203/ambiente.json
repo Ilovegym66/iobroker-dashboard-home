@@ -1,0 +1,531 @@
+[
+  {
+    "category": "Allgemein",
+    "devices": [
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.Regalschmal.power"
+      }
+    ]
+  },
+  {
+    "category": "Regalschrmal",
+    "devices": []
+  },
+  {
+    "category": "Kuechenschrank",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-KuechenschrankDG.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Badewanne",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-BadewanneDG.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Bademodus",
+    "devices": []
+  },
+  {
+    "category": "Vitrine Gross",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf9c8105a73f814be1z2gl.20"
+      },
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-Vitrine-gross.Cmd.Power"
+      },
+      {
+        "name": "SET",
+        "type": "switch",
+        "value": "alias.0.Haus.Dachgeschoss.Wohnzimmer.Goovee-WohnzimmerTV.SET"
+      },
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.Stecker5.POWER"
+      }
+    ]
+  },
+  {
+    "category": "Ambiente TV WZ",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.groups.8450883.20"
+      }
+    ]
+  },
+  {
+    "category": "FensterSchraeg",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ2101-LichtStripeDCC.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Couch Stehlampe Gruppe",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ2101-LichtStripeDCC.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Liebes",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-LeisteWZ.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Leiste Links",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-LeisteCouch.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Leiste Rechts",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-Vitrine-klein.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Leiste Wohnzimmer",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ2101-LichtStripeDCC.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Vitrine klein",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf88c2fc494909d538nhnf.20"
+      }
+    ]
+  },
+  {
+    "category": "Loggia LED",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-Loggiastripe.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Leiste Kurz",
+    "devices": []
+  },
+  {
+    "category": "Chilloutbunt",
+    "devices": []
+  },
+  {
+    "category": "Loggia Bunt",
+    "devices": []
+  },
+  {
+    "category": "Dusche",
+    "devices": []
+  },
+  {
+    "category": "Bett Hinten",
+    "devices": []
+  },
+  {
+    "category": "Kommode",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf9812bef4d67145bf7ymx.20"
+      },
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.LichtDuscheESP.POWER"
+      },
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-Betthinten.Cmd.Power"
+      },
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-Kommode.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Sternhimmel",
+    "devices": []
+  },
+  {
+    "category": "BueroRegal",
+    "devices": []
+  },
+  {
+    "category": "Wled Regal",
+    "devices": []
+  },
+  {
+    "category": "Monitors",
+    "devices": []
+  },
+  {
+    "category": "Table Lamp",
+    "devices": [
+      {
+        "name": "state",
+        "type": "switch",
+        "value": "zigbee2mqtt.0.0x04cf8cdf3c8038bb.state"
+      },
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ2101-LichtStripeDCC.Cmd.Power"
+      },
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.WLEDRegal.power"
+      },
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-LichtMonitors.Cmd.Power"
+      },
+      {
+        "name": "1",
+        "type": "switch",
+        "value": "tuya.0.38338871500291d6d932.1"
+      }
+    ]
+  },
+  {
+    "category": "Couch",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ200-LichtCouch.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "OG",
+    "devices": []
+  },
+  {
+    "category": "DG",
+    "devices": []
+  },
+  {
+    "category": "Kommode",
+    "devices": [
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.Kommode.power"
+      }
+    ]
+  },
+  {
+    "category": "Spot Links Buero Bernd",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bfca0ac8444651ebeeqcqy.20"
+      }
+    ]
+  },
+  {
+    "category": "EG",
+    "devices": []
+  },
+  {
+    "category": "TV Buero Bernd",
+    "devices": [
+      {
+        "name": "Power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.MagicHome.AK001-ZJ2101-LichtStripeDCC.Cmd.Power"
+      }
+    ]
+  },
+  {
+    "category": "Battletron Ball 1",
+    "devices": []
+  },
+  {
+    "category": "Stripe",
+    "devices": []
+  },
+  {
+    "category": "Battletron Light Bar 3 - Muell EG",
+    "devices": []
+  },
+  {
+    "category": "Battletron Light Bar 2 - Muell BB",
+    "devices": []
+  },
+  {
+    "category": "Battletron Light Bar 1 - Muell BI",
+    "devices": []
+  },
+  {
+    "category": "Battletron Ball 3",
+    "devices": []
+  },
+  {
+    "category": "Battletron Ball 2",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bfb1c8e67edce064e1lteg.20"
+      },
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf4fe16de87b36a5defyjy.20"
+      },
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf5108800f07ea348edwwb.20"
+      },
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf8f8aaba9853945496ae3.20"
+      },
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf1e7b6bc76e99aa9e5xgf.20"
+      },
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf560b5745e5aa9c13o989.20"
+      },
+      {
+        "name": "StripeOGBMELK",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.StripeOGBMELK"
+      }
+    ]
+  },
+  {
+    "category": "Deathstar",
+    "devices": [
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.USBSwitch4.POWER"
+      }
+    ]
+  },
+  {
+    "category": "TV OGBB Mood",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf192f7a51273af4857lig.20"
+      }
+    ]
+  },
+  {
+    "category": "Astronaut",
+    "devices": [
+      {
+        "name": "AstronautOGB",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.AstronautOGB"
+      }
+    ]
+  },
+  {
+    "category": "Aukey",
+    "devices": [
+      {
+        "name": "AukeyLampe",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.AukeyLampe"
+      }
+    ]
+  },
+  {
+    "category": "Battletron Light Bar 4 - Muell OGB",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bfb378b33e1e29b654di1o.20"
+      }
+    ]
+  },
+  {
+    "category": "Battletron Stripe",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf3521157e44c70839lt5p.20"
+      }
+    ]
+  },
+  {
+    "category": "Mousepad",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf556e687c2ab101bfabx2.20"
+      }
+    ]
+  },
+  {
+    "category": "Tisch",
+    "devices": [
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.Tisch.power"
+      }
+    ]
+  },
+  {
+    "category": "Workbench",
+    "devices": [
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.Workbench.power"
+      }
+    ]
+  },
+  {
+    "category": "Spot Rechts Buero Bernd",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bff755bafd2a4ec063efix.20"
+      }
+    ]
+  },
+  {
+    "category": "Mood Weiss Regal",
+    "devices": [
+      {
+        "name": "20",
+        "type": "switch",
+        "value": "tuya.0.bf3bce1c2235143d3ajws7.20"
+      }
+    ]
+  },
+  {
+    "category": "Schrank",
+    "devices": [
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.Schrank.power"
+      }
+    ]
+  },
+  {
+    "category": "Ambiente Schalfz.",
+    "devices": [
+      {
+        "name": "turn",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.GoveeApi.99_63_78_9C_E7_0D_1D_74.remote.turn"
+      }
+    ]
+  },
+  {
+    "category": "Unterbauleuchten",
+    "devices": [
+      {
+        "name": "SET",
+        "type": "switch",
+        "value": "alias.0.Haus.Erdgeschoss.Kueche.Unterbauleuchten.SET"
+      }
+    ]
+  },
+  {
+    "category": "Highboard",
+    "devices": []
+  },
+  {
+    "category": "Regal",
+    "devices": [
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.Highboard.power"
+      },
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.Wled.Regalhoch.power"
+      }
+    ]
+  },
+  {
+    "category": "AmbienteTV Ankleide",
+    "devices": [
+      {
+        "name": "SET",
+        "type": "switch",
+        "value": "alias.0.Haus.Dachgeschoss.Gast.Goovee-TvGast.SET"
+      }
+    ]
+  }
+]

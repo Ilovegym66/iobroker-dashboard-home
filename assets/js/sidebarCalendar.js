@@ -11,6 +11,10 @@ const sidebarCalendarJS = {
   // Datum, das aktuell in der Sidebar angezeigt wird
   currentDate: new Date(),
 
+  // Müll-Infos (HTML) + Button-State
+  trashHtmlStateId: '0_userdata.0.vis.trash.MiniHTML',
+  trashButtonStateId: '0_userdata.0.vis.trash.Tonne_draussen',
+
   /**
    * Aktualisiert die Sidebar-Anzeige:
    * 1. Kalenderdaten vom Core laden
@@ -41,8 +45,8 @@ const sidebarCalendarJS = {
         const dateHeader = document.createElement('div');
         dateHeader.classList.add('calendar-date-header');
         dateHeader.textContent = this.isToday(this.currentDate)
-          ? "Heutige Termine"
-          : "Morgige Termine";
+          ? 'Heutige Termine'
+          : 'Morgige Termine';
         calendarContainer.appendChild(dateHeader);
 
         // Navigation
@@ -69,15 +73,18 @@ const sidebarCalendarJS = {
         }
 
         // Events in diesen Container rendern (wieder via deviceIoBrokerIcalJS-Funktion)
-        deviceIoBrokerIcalJS.renderCalendarEvents(calendarContainer, events, {heading: null});
+        deviceIoBrokerIcalJS.renderCalendarEvents(calendarContainer, events, { heading: null });
+
+        // Müll-Infos + Button unter den Terminen
+        this.renderTrashInfo(calendarContainer);
 
         // Slide-in-Effekt
         calendarContainer.classList.add('calendar-slide-in');
 
-        // An sidebar anhängen
+        // An Sidebar anhängen
         sidebarContent.appendChild(calendarContainer);
 
-        // optional: Status der Events direkt updaten
+        // Status der Events direkt updaten
         this.updateEventStatus();
       })
       .catch(error => {
@@ -86,13 +93,67 @@ const sidebarCalendarJS = {
   },
 
   /**
+   * Rendert unterhalb der Kalender-Events das Müll-HTML
+   * aus `trashHtmlStateId` und einen Button "Tonne draußen".
+   *
+   * @param {HTMLElement} calendarContainer
+   */
+  renderTrashInfo(calendarContainer) {
+    if (!calendarContainer) return;
+
+    const trashBox = document.createElement('div');
+    trashBox.classList.add('trash-container');
+
+    // HTML aus ioBroker-State lesen
+    let trashHtml = '';
+    if (typeof ioBrokerStates !== 'undefined' && this.trashHtmlStateId) {
+      const state = ioBrokerStates[this.trashHtmlStateId];
+      if (state && state.val) {
+        trashHtml = String(state.val);
+      }
+    }
+
+    const trashHtmlDiv = document.createElement('div');
+    trashHtmlDiv.classList.add('trash-html');
+
+    if (trashHtml) {
+      trashHtmlDiv.innerHTML = trashHtml;
+    } else {
+      trashHtmlDiv.textContent = 'Keine Müll-Informationen verfügbar.';
+    }
+    trashBox.appendChild(trashHtmlDiv);
+
+    // Button "Tonne draußen"
+    if (this.trashButtonStateId) {
+      const button = document.createElement('switch');
+      button.classList.add('trash-button');
+      button.textContent = 'Tonne draußen';
+
+      button.addEventListener('click', () => {
+        if (typeof ioBrokerJS === 'undefined') return;
+
+        const current = (ioBrokerStates && ioBrokerStates[this.trashButtonStateId])
+          ? ioBrokerStates[this.trashButtonStateId].val
+          : false;
+
+        const newVal = !current;
+        ioBrokerJS.sendCommand(this.trashButtonStateId, newVal);
+      });
+
+      trashBox.appendChild(button);
+    }
+
+    calendarContainer.appendChild(trashBox);
+  },
+
+  /**
    * Prüft, ob das Datum `date` heute ist.
    */
   isToday(date) {
     const today = new Date();
-    return date.getDate() === today.getDate() &&
-      date.getMonth() === today.getMonth() &&
-      date.getFullYear() === today.getFullYear();
+    return date.getDate() === today.getDate()
+      && date.getMonth() === today.getMonth()
+      && date.getFullYear() === today.getFullYear();
   },
 
   /**
@@ -101,9 +162,9 @@ const sidebarCalendarJS = {
   isTomorrow(date) {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
-    return date.getDate() === tomorrow.getDate() &&
-      date.getMonth() === tomorrow.getMonth() &&
-      date.getFullYear() === tomorrow.getFullYear();
+    return date.getDate() === tomorrow.getDate()
+      && date.getMonth() === tomorrow.getMonth()
+      && date.getFullYear() === tomorrow.getFullYear();
   },
 
   /**
@@ -149,5 +210,5 @@ const sidebarCalendarJS = {
   }
 };
 
-// Wenn die Sidebar aktiv ist, z.B.:
-/// sidebarCalendarJS.startCalendarUpdates();
+// Start z.B. aus der Sidebar-Initialisierung:
+// sidebarCalendarJS.startCalendarUpdates();

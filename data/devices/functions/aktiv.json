@@ -1,0 +1,72 @@
+[
+  {
+    "category": "Allgemein",
+    "devices": [
+      {
+        "name": "Ambiente",
+        "type": "link",
+        "value": "Ambiente"
+      },
+      {
+        "name": "Apple",
+        "type": "link",
+        "value": "Apple"
+      },
+      {
+        "name": "Bewässerung",
+        "type": "link",
+        "value": "Bewässerung"
+      },
+      {
+        "name": "Garage",
+        "type": "link",
+        "value": "Garage"
+      },
+      {
+        "name": "Garten",
+        "type": "link",
+        "value": "Garten"
+      },
+      {
+        "name": "Klima",
+        "type": "link",
+        "value": "Klima"
+      },
+      {
+        "name": "Licht",
+        "type": "link",
+        "value": "Licht"
+      },
+      {
+        "name": "Mähroboter",
+        "type": "link",
+        "value": "Mähroboter"
+      },
+      {
+        "name": "Presence",
+        "type": "link",
+        "value": "Presence"
+      },
+      {
+        "name": "Rolladen",
+        "type": "link",
+        "value": "Rolladen"
+      },
+      {
+        "name": "Schalter",
+        "type": "link",
+        "value": "Schalter"
+      },
+      {
+        "name": "Tablet-Schalter",
+        "type": "link",
+        "value": "Tablet-Schalter"
+      },
+      {
+        "name": "Türen/Fenster",
+        "type": "link",
+        "value": "Türen/Fenster"
+      }
+    ]
+  }
+]

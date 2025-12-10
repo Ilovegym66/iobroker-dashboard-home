@@ -1,38 +1,27 @@
 [
   {
-    "user": "papa",
-    "name": "Big Daddy",
+    "user": "admin",
+    "name": "Admin (ilovegym)",
     "icon": "papa.jpg",
     "pin": "0000"
   },
   {
-    "user": "mama",
-    "name": "Big Mama",
-    "icon": "mama.jpg",
-    "pin": "0000"
-  },
-  {
-    "user": "kind1",
-    "name": "Little Princess",
-    "icon": "kind1.jpg",
-    "pin": "0000"
-  },
-  {
-    "user": "kind2",
-    "name": "Metal Kid",
-    "icon": "kind2.jpg",
-    "pin": "0000"
-  },
-  {
-    "user": "kind3",
-    "name": "Junior Gamer",
+    "user": "bernd",
+    "name": "Bernd",
     "icon": "kind3.jpg",
     "pin": "0000"
   },
   {
-    "user": "wohnzimmertab",
-    "name": "Wohnzimmer Tab",
+    "user": "isa",
+    "name": "Isa",
+    "icon": "mama.jpg",
+    "pin": "0000"
+  },
+  {
+    "user": "gast",
+    "name": "Gast",
     "icon": "tab.png",
     "pin": "0000"
   }
 ]
+

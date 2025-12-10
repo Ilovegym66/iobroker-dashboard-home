@@ -1,0 +1,272 @@
+[
+  {
+    "category": "Guten Morgen",
+    "devices": []
+  },
+  {
+    "category": "TFT Buero Bernd",
+    "devices": [
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.NousA8T-11.POWER"
+      },
+      {
+        "name": "power",
+        "type": "switch",
+        "value": "0_userdata.0.Geraete.LGTV.LGTV_BB.power"
+      }
+    ]
+  },
+  {
+    "category": "Arbeitsmodus Isa",
+    "devices": [
+      {
+        "name": "WorkingModeIsa",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.WorkingModeIsa"
+      }
+    ]
+  },
+  {
+    "category": "Arbeitsmodus Bernd",
+    "devices": [
+      {
+        "name": "POWER2",
+        "type": "switch",
+        "value": "sonoff.0.Switch-BB.POWER2"
+      }
+    ]
+  },
+  {
+    "category": "Bademodus DG",
+    "devices": [
+      {
+        "name": "Bademodus",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.Bademodus"
+      }
+    ]
+  },
+  {
+    "category": "Duschmodus OGB",
+    "devices": [
+      {
+        "name": "DuschmodusOGB",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.DuschmodusOGB"
+      }
+    ]
+  },
+  {
+    "category": "Bademodus OG",
+    "devices": [
+      {
+        "name": "DuschmodusBadOGTreppe",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.DuschmodusBadOGTreppe"
+      }
+    ]
+  },
+  {
+    "category": "Werkstatt",
+    "devices": [
+      {
+        "name": "Werkstatt",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.Werkstatt"
+      }
+    ]
+  },
+  {
+    "category": "TV Buero Bernd",
+    "devices": [
+      {
+        "name": "TV-BueroEG",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-BueroEG"
+      }
+    ]
+  },
+  {
+    "category": "TV Terrasse",
+    "devices": [
+      {
+        "name": "TV-BueroIsa",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-BueroIsa"
+      }
+    ]
+  },
+  {
+    "category": "TV Schlafzimmer",
+    "devices": [
+      {
+        "name": "TV-SchlafzimmerOGB",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-SchlafzimmerOGB"
+      }
+    ]
+  },
+  {
+    "category": "TV Esszimmer",
+    "devices": [
+      {
+        "name": "TV-KuecheEG",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-KuecheEG"
+      }
+    ]
+  },
+  {
+    "category": "TV Keller",
+    "devices": []
+  },
+  {
+    "category": "Duftspender 1",
+    "devices": []
+  },
+  {
+    "category": "Duftspender 2",
+    "devices": []
+  },
+  {
+    "category": "Duftspender 3",
+    "devices": [
+      {
+        "name": "TV-Keller",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-Keller"
+      },
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.S5V-2.POWER"
+      },
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.S5V-3.POWER"
+      },
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.Wemos3-Duftspender3.POWER"
+      }
+    ]
+  },
+  {
+    "category": "TV Gast",
+    "devices": [
+      {
+        "name": "TV_GastDG",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV_GastDG"
+      }
+    ]
+  },
+  {
+    "category": "Duftspender 4",
+    "devices": [
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.Wemos-4.POWER"
+      }
+    ]
+  },
+  {
+    "category": "Unnamed",
+    "devices": []
+  },
+  {
+    "category": "Unnamed",
+    "devices": [
+      {
+        "name": "ENERGY_Power",
+        "type": "switch",
+        "value": "sonoff.0.POW-SchreibtischISA.ENERGY_Power"
+      },
+      {
+        "name": "ENERGY_Power",
+        "type": "switch",
+        "value": "sonoff.0.POW316-2-BuerosOG.ENERGY_Power"
+      }
+    ]
+  },
+  {
+    "category": "TV WZ EG",
+    "devices": [
+      {
+        "name": "TV-WohnzimmerEG",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-WohnzimmerEG"
+      }
+    ]
+  },
+  {
+    "category": "TV Kueche DG",
+    "devices": [
+      {
+        "name": "TV-KuecheDG",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-KuecheDG"
+      }
+    ]
+  },
+  {
+    "category": "Dunstabzug",
+    "devices": [
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.Stecker12.POWER"
+      }
+    ]
+  },
+  {
+    "category": "Gute Nacht",
+    "devices": [
+      {
+        "name": "GuteNacht",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.GuteNacht"
+      }
+    ]
+  },
+  {
+    "category": "Samsung TFT's",
+    "devices": [
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.NousA1T-2-SamsungMonitore.POWER"
+      },
+      {
+        "name": "GutenMorgen",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.GutenMorgen"
+      }
+    ]
+  },
+  {
+    "category": "GastModus",
+    "devices": [
+      {
+        "name": "GastModus",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.GastModus"
+      }
+    ]
+  },
+  {
+    "category": "TV WZ DG",
+    "devices": [
+      {
+        "name": "TV-WohnzimmerDG",
+        "type": "switch",
+        "value": "0_userdata.0.Schalter.TV-WohnzimmerDG"
+      }
+    ]
+  }
+]

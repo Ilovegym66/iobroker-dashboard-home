@@ -1,0 +1,77 @@
+[
+  {
+    "category": "Fenster offen:",
+    "devices": [
+      {
+        "name": "Fenster-offen-Text",
+        "type": "html",
+        "value": "0_userdata.0.vis.Fenster-offen-Text"
+      },
+      {
+        "name": "Tueren-offen-Text",
+        "type": "html",
+        "value": "0_userdata.0.vis.Tueren-offen-Text"
+      }
+    ]
+  },
+  {
+    "category": "Tueren offen:",
+    "devices": [
+      {
+        "name": "FensterCount",
+        "type": "switch",
+        "value": "0_userdata.0.vis.FensterCount"
+      },
+      {
+        "name": "TuerenCount",
+        "type": "switch",
+        "value": "0_userdata.0.vis.TuerenCount"
+      }
+    ]
+  },
+  {
+    "category": "Schiebetor Vorne",
+    "devices": [
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.USBRelais2.POWER"
+      },
+      {
+        "name": "opened",
+        "type": "indicator",
+        "value": "zigbee2mqtt.0.0x00158d0002c39587.opened"
+      }
+    ]
+  },
+  {
+    "category": "Schiebetor Hinten",
+    "devices": [
+      {
+        "name": "POWER",
+        "type": "switch",
+        "value": "sonoff.0.USBRelais1.POWER"
+      },
+      {
+        "name": "1",
+        "type": "indicator",
+        "value": "tuya.0.bf124d94276be8365d0cqv.1"
+      }
+    ]
+  },
+  {
+    "category": "Stahltor",
+    "devices": [
+      {
+        "name": "Stahltor",
+        "type": "switch",
+        "value": "0_userdata.0.Presence.Stahltor"
+      },
+      {
+        "name": "isOpen",
+        "type": "indicator",
+        "value": "0_userdata.0.Geraete.TTlock.Stahltor.isOpen"
+      }
+    ]
+  }
+]

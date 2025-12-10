@@ -1,0 +1,159 @@
+:root {
+  /* Hauptfarben – jetzt grün als Default */
+  --main-color: #22c55e;          /* Buttons, Footer, Einstellungen */
+  --main-color-hover: #4ade80;    /* Hover/aktiv */
+  --secondary-color: #da5926;     /* bleibt Orange für spezielle Akzente */
+
+  /* Hintergrund (wie bisher) */
+  --main-background: radial-gradient(140% 140% at 0% 0%, #0b1120 0, #020617 45%, #000000 100%);
+
+  /* Karten / deaktivierte Flächen */
+  --tile-background: #111827;
+  --disabled-background-dark: #020617;
+  --disabled-background: #111827;
+  --disabled-background-middle: #1f2937;
+  --disabled-background-light: #374151;
+
+  /* Schriftfarben – alle eher hell */
+  --main-font-color: #e5e7eb;
+  --dark-font: #f9fafb;
+  --middle-font: #d1d5db;
+  --light-font: #e5e7eb;
+}
+
+
+/* ===== Globale Layout-Anpassungen auf dunkel ===== */
+
+body {
+  background-color: #050814;
+  color: var(--main-font-color);
+}
+
+/* Haupt-Content-Hintergrund */
+.main-content {
+  background: radial-gradient(140% 140% at 0% 0%, #0b1120 0, #020617 45%, #000000 100%);
+}
+
+/* Sidebar links */
+.sidebar {
+  background: linear-gradient(135deg, #020617 0, #0b1120 40%, #020617 100%);
+  color: var(--light-font);
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.7);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.sidebar h2 {
+  color: var(--dark-font);
+}
+
+/* Profil-Infos in der Sidebar */
+.sidebar-profile-name {
+  color: var(--dark-font);
+  font-weight: 600;
+}
+
+.sidebar-user-name {
+  color: var(--light-font);
+}
+
+/* Uhr / Datum / Wetter in der Sidebar */
+.clock-time {
+  color: var(--dark-font);
+  font-weight: 500;
+}
+
+.clock-date {
+  color: var(--light-font);
+}
+
+.sidebar-weather-temp {
+  color: var(--dark-font);
+}
+
+.sidebar-weather-desc {
+  color: var(--middle-font);
+}
+
+/* Tiles / Karten – dunkle Karten mit weichem Schatten */
+.item-tile,
+.iframe-tile .tile-content {
+  background-color: var(--tile-background);
+  color: var(--dark-font);
+  border-radius: 18px;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.9);
+  border: none;
+}
+
+/* Bilder in den Tiles */
+.tile-image img {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* Titel + Footer in Tiles */
+.tile-title {
+  color: var(--dark-font);
+}
+
+.tile-footer span,
+.status-container {
+  color: var(--middle-font);
+}
+
+/* Footer-Navigation unten */
+.footer {
+  background: rgba(15, 23, 42, 0.97);
+  border-top: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+/* Buttons (z. B. Szenen, Navigation) */
+button,
+.footer button {
+  background: linear-gradient(135deg, var(--main-color), var(--main-color-hover));
+  color: #0b1120;
+  border-radius: 999px;
+  border: none;
+  font-weight: 500;
+}
+
+/* Verbindungssymbol oben rechts */
+.connection-icon.connected {
+  color: #22c55e;
+}
+
+.connection-icon.disconnected {
+  color: #f97373;
+}
+
+/* HTML-Dashboards im Tile */
+.iframe-tile .html-content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: transparent;
+  color: var(--main-font-color);
+}
+
+/* Eingebettetes HTML nicht mit weißem Hintergrund überbügeln */
+.iframe-tile .html-content body {
+  background: transparent !important;
+  color: var(--main-font-color);
+}
+/* ==== Spinner / Loading-Overlay deaktivieren ==== */
+
+/* Vollbild-Ladebildschirm ausblenden */
+.loading-overlay,
+#loading-overlay,
+.app-loading {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Falls einzelne Spinner-Elemente verwendet werden: ebenfalls verstecken */
+.loading-spinner,
+.spinner,
+.spinner-wrapper {
+  display: none !important;
+}
