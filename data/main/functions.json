@@ -14,37 +14,37 @@
       "tiles": [
         {
           "name": "Licht",
-          "json": "licht.json",
+          "json": "licht",
           "image": "placeholder.svg",
           "status": []
         },
         {
           "name": "Ambiente",
-          "json": "ambiente.json",
+          "json": "ambiente",
           "image": "placeholder.svg",
           "status": []
         },
         {
           "name": "Schalter",
-          "json": "schalter.json",
+          "json": "schalter",
           "image": "placeholder.svg",
           "status": []
         },
         {
           "name": "Türen/Fenster",
-          "json": "tueren_fenster.json",
+          "json": "tueren_fenster",
           "image": "placeholder.svg",
           "status": []
         },
         {
           "name": "Aktiv",
-          "json": "aktiv.json",
+          "json": "aktiv",
           "image": "placeholder.svg",
           "status": []
         },
         {
           "name": "Dashboards",
-          "json": "dashboards.json",
+          "json": "dashboards",
           "image": "placeholder.svg",
           "status": []
         }
