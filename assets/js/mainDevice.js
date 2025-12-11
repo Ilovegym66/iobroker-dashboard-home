@@ -13,6 +13,67 @@
  *
  * @namespace mainDeviceJS
  */
+
+/**
+ * Mapping von Dashboard-Namen (Funktionen/Dashboards) -> HTML-State-ID
+ * für die Anzeige als iframe.
+ */
+const DASHBOARD_HTML_MAP = {
+  "Alarm": "0_userdata.0.vis.Dashboards.Alarmhtml",
+  "Anwesend": "0_userdata.0.vis.Dashboards.EspresenseHTML",
+  "Backups": "0_userdata.0.vis.Dashboards.BackupHTML",
+  "Coffee": "0_userdata.0.vis.Dashboards.DelonghiHTML",
+  "Docker": "0_userdata.0.Portainer.Containers.StatusMobile",
+  "Energycharts": "0_userdata.0.vis.Pages.Energy-Charts.Dashboard.MinuvisHTML",
+  "F1": "0_userdata.0.vis.Dashboards.F1.DashboardHTML",
+  "Feuchte": "0_userdata.0.vis.Dashboards.FeuchtigkeitHTML",
+  "Fritzbox": "0_userdata.0.vis.Dashboards.Fritzsystemhtml",
+  "FritzDect": "0_userdata.0.vis.Dashboards.FritzDecthtml",
+  "Fullybrowser": "0_userdata.0.vis.Dashboards.FullyOverview.html",
+  "Geburtstage": "0_userdata.0.Tools.Events.Birthdays.listHTML",
+  "Heizung": "0_userdata.0.vis.Dashboards.VitodensHTML",
+  "Ioniq 5 N": "0_userdata.0.vis.Dashboards.IoniqDashboardHTML",
+  "Lebensmittel": "0_userdata.0.vis.TABELLEN.Lebensmittel.Deutschland.HTML.Page",
+  "LG ThinQ": "0_userdata.0.vis.Dashboards.LGThinQDashboardHTML",
+  "Linux-Control": "0_userdata.0.vis.Dashboards.LinuxControlHTML",
+  "Minuvis": "0_userdata.0.vis.Dashboards.MinuvisKioskhtml",
+  "Monitore": "0_userdata.0.vis.Dashboards.MonitorHTML",
+  "Multi-Zone": "0_userdata.0.vis.Dashboards.ZonenDashboardHTML",
+  "Oilfox": "0_userdata.0.vis.Dashboards.OilfoxHTML",
+  "Outdoor": "0_userdata.0.vis.Dashboards.OutdoorsensorsHTML",
+  "Overview": "0_userdata.0.vis.Dashboards.SystemOverviewHTML",
+  "Ozon": "0_userdata.0.vis.Dashboards.OzonHTML",
+  "Pi Temp": "0_userdata.0.vis.Dashboards.PiTempHTML",
+  "Proxmox-Cluster": "0_userdata.0.vis.Dashboards.ProxmoxMainHTML",
+  "PV-Analyse": "0_userdata.0.vis.Dashboards.Energiemanagement.HTML.Page",
+  "PV-Report": "0_userdata.0.vis.Dashboards.PVreportHTML",
+  "PV-Tagesreport": "0_userdata.0.vis.Dashboards.DeyeDailyReportHTML",
+  "Router": "0_userdata.0.vis.Dashboards.RouterOverviewHTML",
+  "Script-Monitor": "0_userdata.0.vis.Dashboards.ScriptOverviewHTML",
+  "Shellies": "0_userdata.0.vis.Dashboards.ShellyFleetHTML",
+  "Solar": "0_userdata.0.vis.Dashboards.SolarHTML",
+  "Solar-Test": "0_userdata.0.vis.Dashboards.Energytesthtml",
+  "Speedtest": "0_userdata.0.vis.Dashboards.SpeedtestHTML",
+  "Strompreise": "0_userdata.0.vis.Dashboards.StrompreiseHTML",
+  "SW-Fleet": "0_userdata.0.vis.Dashboards.SWfleetHTML",
+  "System": "0_userdata.0.vis.Dashboards.SystemHTML",
+  "SV 98": "0_userdata.0.vis.Dashboards.Fussball2HTML",
+  "Synology": "0_userdata.0.vis.Dashboards.Synology",
+  "SynoShop": "0_userdata.0.vis.Dashboards.SynologyShop",
+  "Syr Lex Plus": "0_userdata.0.vis.Dashboards.SyrconnectHTML",
+  "Temperaturen": "0_userdata.0.vis.Dashboards.TemperaturenHTML",
+  "Trakt": "0_userdata.0.vis.Dashboards.Netflixhtml",
+  "Trash": "0_userdata.0.vis.trash.DashboardHTML",
+  "UPS": "0_userdata.0.vis.Dashboards.NutserverHtml",
+  "Vacuums": "0_userdata.0.vis.Dashboards.RoborockFleetHTML",
+  "Waage": "0_userdata.0.vis.Dashboards.WithingsMainHTML",
+  "Wasser": "0_userdata.0.vis.Dashboards.Bewaesserunghtml",
+  "Wetter": "0_userdata.0.vis.Dashboards.Wetter",
+  "ZigbeeBatt": "0_userdata.0.vis.Dashboards.ZigbeeBatterieHTML",
+  "Go-E": "0_userdata.0.vis.Dashboards.Go-E",
+};
+
+
 const mainDeviceJS = {
 
   /**
@@ -87,7 +148,63 @@ const mainDeviceJS = {
         tile.classList.add('iframe-tile');
         deviceIframeJS.addIframeControls(tileContent, device);
         break;
-      default:
+      case 'switch':
+        tile.classList.add('plug-tile', 'switch-tile');
+        devicePlugJS.addPlugControls(tileContent, device, canWrite);
+        break;
+      case 'html':
+        tile.classList.add('iframe-tile', 'html-tile');
+        if (!device.html && device.value) {
+        device.html = device.value;
+        }
+        deviceIframeJS.addIframeControls(tileContent, device);
+        break;
+      case 'link':
+        tile.classList.add('button-tile', 'link-tile');
+
+        const openBtn = document.createElement('button');
+        openBtn.classList.add('link-open-button');
+        openBtn.textContent = 'Öffnen';
+
+        openBtn.addEventListener('click', () => {
+          const rawName = device.value || device.name || '';
+          const linkName = rawName.trim();
+
+          // 1) Dashboards (Funktionen → Dashboards)
+          if (typeof DASHBOARD_HTML_MAP !== 'undefined' && DASHBOARD_HTML_MAP[linkName]) {
+            console.log('[link] Öffne Dashboard:', linkName, '->', DASHBOARD_HTML_MAP[linkName]);
+            mainDeviceJS.openHtmlDashboard(linkName, DASHBOARD_HTML_MAP[linkName]);
+            return;
+          }
+
+          // 2) Funktions-Gruppen aus "Aktiv"
+          const functionsMap = {
+            'Licht': 'licht',
+            'Ambiente': 'ambiente',
+            'Schalter': 'schalter',
+            'Türen/Fenster': 'tueren_fenster',
+            // optional, falls du später eigene Seiten für diese Namen anlegst:
+            'Aktiv': 'aktiv',
+            'Dashboards': 'dashboards'
+          };
+
+          if (functionsMap[linkName]) {
+            console.log('[link] Öffne Funktions-Seite:', linkName, '->', functionsMap[linkName]);
+            mainDeviceJS.openItem(linkName, 'functions', functionsMap[linkName]);
+            return;
+          }
+
+          console.warn('[link] Kein Mapping für Link-Name', linkName, device);
+        });
+
+        tileContent.appendChild(openBtn);
+        break;
+
+
+
+
+
+	default:
         console.warn(`Gerätetyp "${device.type}" wird nicht unterstützt.`);
     }
   },
@@ -138,7 +255,10 @@ const mainDeviceJS = {
     extraControlDiv.classList.add('extra-controls');
 
     // Standard-Settings-Button
+     // Standard-Settings-Button (nicht für Link/Iframe/HTML)
+    if (!['link', 'iframe', 'html'].includes(device.type)) {
     mainDeviceJS.createExtraButton(extraControlDiv, device, canWrite);
+    }
 
     // Media: Kanäle-Button, falls Kanallisten vorhanden
     if (
@@ -668,6 +788,61 @@ const mainDeviceJS = {
       console.error(`Fehler beim Laden der ${type}-Datei:`, error);
     }
   },
+
+  /**
+   * Öffnet ein Dashboard, das als HTML-State in ioBroker vorliegt,
+   * in einer eigenen Seite im Hauptbereich.
+   *
+   * @param {string} name - Anzeigetitel der Seite.
+   * @param {string} htmlStateId - ioBroker State-ID mit dem HTML-Inhalt.
+   */
+  async openHtmlDashboard(name, htmlStateId) {
+    const mainContent = document.querySelector('.main-content');
+    mainContent.innerHTML = '';
+    ioBrokerJS.clearPageIds();
+
+    // Verbindungssymbol
+    const connectionIcon = document.createElement('i');
+    connectionIcon.classList.add('fa', 'fa-network-wired', 'connection-icon');
+    connectionIcon.style.color = (servConn._isConnected || isDemoVersion) ? 'green' : 'red';
+    mainContent.appendChild(connectionIcon);
+
+    // Titel
+    const title = document.createElement('h2');
+    title.textContent = name;
+    title.id = 'page-title';
+    mainContent.appendChild(title);
+
+    // Container wie bei openItem
+    const categorySection = document.createElement('section');
+    categorySection.classList.add('category');
+
+    const tilesContainer = document.createElement('div');
+    tilesContainer.classList.add('tiles');
+
+    const tile = document.createElement('div');
+    tile.classList.add('tile', 'iframe-tile');
+
+    const tileContent = document.createElement('div');
+    tileContent.classList.add('tile-content');
+
+    // Gerätedefinition für iframe-Control
+    const iframeDevice = {
+      name,
+      type: 'iframe',
+      html: htmlStateId
+    };
+
+    // Primäre Controls für iframe hinzufügen
+    deviceIframeJS.addIframeControls(tileContent, iframeDevice);
+
+    tile.appendChild(tileContent);
+    tilesContainer.appendChild(tile);
+    categorySection.appendChild(tilesContainer);
+    mainContent.appendChild(categorySection);
+  },
+
+
 
   /**
    * Erzeugt einen Button, der ein Overlay mit einer Liste aller vorhandenen
