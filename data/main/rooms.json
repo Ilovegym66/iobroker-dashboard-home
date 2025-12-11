@@ -13,38 +13,334 @@
       "category": "Erdgeschoss",
       "tiles": [
         {
-          "name": "Wohn- und Esszimmer",
-          "json": "wohnzimmer",
-          "image": "WohnEsszimmer.webp",
-          "status": [
-            {
-              "label": "Gute Nacht",
-              "value": "0_userdata.0.Schalter.GuteNacht",
-              "icon": "fa-moon"
-            },
-            {
-              "label": "TV Wohnzimmer",
-              "value": "0_userdata.0.Schalter.TV-WohnzimmerDG",
-              "icon": "fa-tv"
-            },
-            {
-              "label": "TV LG",
-              "value": "0_userdata.0.Schalter.TV-WohnzimmerEG",
-              "icon": "fa-tv"
-            }
-          ]
+          "name": "Bad_EG",
+          "json": "erdgeschoss_bad",
+          "image": "BadOG.webp",
+          "status": []
         },
         {
-          "name": "Küche / Esszimmer",
-          "json": "kuche",
-          "image": "Kueche.webp",
+          "name": "Esszimmer",
+          "json": "erdgeschoss_esszimmer",
+          "image": "WohnEsszimmer.webp",
           "status": [
-            {
+           {
               "label": "TV Küche",
               "value": "0_userdata.0.Schalter.TV-KuecheEG",
               "icon": "fa-tv"
             }
-          ]
+]
+        },
+        {
+          "name": "Hauseingang",
+          "json": "erdgeschoss_hauseingang",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Korridor_EG",
+          "json": "erdgeschoss_korridor",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Küche_EG",
+          "json": "erdgeschoss_kueche",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Schlafzimmer_EG",
+          "json": "erdgeschoss_schlafzimmer",
+          "image": "Schlafzimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Wohnzimmer_EG",
+          "json": "erdgeschoss_wohnzimmer",
+          "image": "WohnEsszimmer.webp",
+          "status": [
+          {
+              "label": "TV LG",
+              "value": "0_userdata.0.Schalter.TV-WohnzimmerEG",
+              "icon": "fa-tv"
+            }
+]
+        }
+      ]
+    },
+    {
+      "category": "Obergeschoss",
+      "tiles": [
+        {
+          "name": "Arbeitszimmer_Bernd",
+          "json": "obergeschoss_arbeitszimmer_bernd",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Arbeitszimmer_Isa",
+          "json": "obergeschoss_arbeitszimmer_isa",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Bad_OGB",
+          "json": "obergeschoss_bad",
+          "image": "BadOG.webp",
+          "status": []
+        },
+        {
+          "name": "Bürobad",
+          "json": "obergeschoss_buerobad",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Flurog",
+          "json": "obergeschoss_flurog",
+          "image": "FlurOG.webp",
+          "status": []
+        },
+        {
+          "name": "Schlafzimmer_OG",
+          "json": "obergeschoss_schlafzimmer",
+          "image": "Schlafzimmer.webp",
+          "status": []
+        }
+      ]
+    },
+    {
+      "category": "Dachgeschoss",
+      "tiles": [
+        {
+          "name": "Abstellraum_DG",
+          "json": "dachgeschoss_abstellraum",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Bad_DG",
+          "json": "dachgeschoss_bad",
+          "image": "BadOG.webp",
+          "status": []
+        },
+        {
+          "name": "Blumen",
+          "json": "dachgeschoss_blumen",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Dachboden",
+          "json": "dachgeschoss_dachboden",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Gast_DG",
+          "json": "dachgeschoss_gast",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Küche_DG",
+          "json": "dachgeschoss_kueche",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Loggia",
+          "json": "dachgeschoss_loggia",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Wohnzimmer_DG",
+          "json": "dachgeschoss_wohnzimmer",
+          "image": "WohnEsszimmer.webp",
+          "status": [
+           {
+              "label": "TV Wohnzimmer",
+              "value": "0_userdata.0.Schalter.TV-WohnzimmerDG",
+              "icon": "fa-tv"
+            }
+]
+        }
+      ]
+    },
+    {
+      "category": "Keller",
+      "tiles": [
+        {
+          "name": "Ausgang",
+          "json": "keller_ausgang",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Fitnessraum",
+          "json": "keller_fitnessraum",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Flur_Keller",
+          "json": "keller_flur",
+          "image": "FlurOG.webp",
+          "status": []
+        },
+        {
+          "name": "Heizungsraum",
+          "json": "keller_heizungsraum",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Technikraum",
+          "json": "keller_technikraum",
+          "image": "WohnEsszimmer.webp",
+          "status": [
+          {
+              "label": "Gute Nacht",
+              "value": "0_userdata.0.Schalter.GuteNacht",
+              "icon": "fa-moon"
+            }
+
+
+]
+        },
+        {
+          "name": "Vorratskeller",
+          "json": "keller_vorratskeller",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Werkstatt",
+          "json": "keller_werkstatt",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        }
+      ]
+    },
+    {
+      "category": "Garage",
+      "tiles": [
+        {
+          "name": "Fenster Garage",
+          "json": "garage_fenster_garage",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Garagentor",
+          "json": "garage_garagentor",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Licht Garage",
+          "json": "garage_licht_garage",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Tür Garage",
+          "json": "garage_tuer_garage",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        }
+      ]
+    },
+    {
+      "category": "Carport",
+      "tiles": [
+        {
+          "name": "Schiebetorhinten",
+          "json": "carport_schiebetorhinten",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Schiebetorvorne",
+          "json": "carport_schiebetorvorne",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        }
+      ]
+    },
+    {
+      "category": "Garten",
+      "tiles": [
+        {
+          "name": "Grosses Tor",
+          "json": "garten_grosses_tor",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Kleines Tor",
+          "json": "garten_kleines_tor",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Mähroboter",
+          "json": "garten_maehroboter",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Schiebetor",
+          "json": "garten_schiebetor",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Stahltor",
+          "json": "garten_stahltor",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        }
+      ]
+    },
+    {
+      "category": "Terrasse",
+      "tiles": [
+        {
+          "name": "Fliegengitter",
+          "json": "terrasse_fliegengitter",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Vorhang",
+          "json": "terrasse_vorhang",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        }
+      ]
+    },
+    {
+      "category": "Shop",
+      "tiles": [
+        {
+          "name": "Fenster Shop",
+          "json": "shop_fenster_shop",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Tür Geräteshop",
+          "json": "shop_tuer_geraeteshop",
+          "image": "WohnEsszimmer.webp",
+          "status": []
+        },
+        {
+          "name": "Tür Shop",
+          "json": "shop_tuer_shop",
+          "image": "WohnEsszimmer.webp",
+          "status": []
         }
       ]
     }
