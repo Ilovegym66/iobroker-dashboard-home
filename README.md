@@ -34,6 +34,9 @@ Um die JSON Dateien einfacher zu editieren, wurde ein Editor auf Basis von Node.
 ## Handhabung bei Produktivnutzung
 
 ## Changelog
+
+- (ilovegym66) work in progress...
+- (ilovegym66) forked and configured for own setup
 ### 0.0.1 (2025-02-xx)
 - (ldittmar) Konfiguration Editor (in Arbeit)
 - (ldittmar) Grundfunktionen hinzugefügt
